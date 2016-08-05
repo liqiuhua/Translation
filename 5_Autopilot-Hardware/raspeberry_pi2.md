@@ -1,22 +1,22 @@
 # 树莓派Pi 2
 
-# Raspberry Pi 2 Autopilot
+# t树莓派2自动驾驶仪
 
 ![rpi2](../pictures/hardware/hardware-rpi2.jpg)
 
-## Developer Quick Start
+## 快速开发指南
 
-### OS Image
+### 系统镜像
 
-Use the [Emlid RT Raspbian image](http://docs.emlid.com/navio/Downloads/Real-time-Linux-RPi2/) till the default pre-configured PX4 image is made available. The default image will have most of the setup procedures shown below already done.
+使用[Emlid RT Raspbian image](http://docs.emlid.com/navio/Downloads/Real-time-Linux-RPi2/)这个前期配置好的有效的PX4树莓派镜像。这个镜像默认最大化的事先配置了程序。
 
-### Setting up access
+### 进入设置
 
-The Raspbian image has SSH setup already. Username is "pi" and password is "raspberry". You can connect to your RPi2 over a network (Ethernet is set to come up with DHCP by default) and then proceed to configure WiFi access. We assume that the username and password remain at their defaults for the purpose of this guide.
+此树莓派镜像已经事先设置好了SSH。用户名：pi和密码是：raspberry。你可以直接通过网络去连接你的树莓派2（以太网已经启动并且默认自动分配IP）和可以配置使用wifi。在这篇指南中，我们采取默认的用户名和密码登入树莓派系统。
 
-To setup the RPi2 to join your local wifi, follow [this guide](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
+设置你的树莓派加入你的本地wifi（使你的树莓派连接你的wifi），参考这篇指导文章。 [这篇指导文章](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 
-Find the IP address of your Pi from your network, and then you can proceed to connect to it using SSH.
+找到你的树莓派在你的网络中IP地址，随后你可以开始通过SSH的方式连接Pi2。
 <div class="host-code"></div>
 
 ```sh
@@ -25,7 +25,7 @@ ssh pi@<IP-ADDRESS>
 
 ### Changing hostnames
 
-To avoid conflicts with any other RPis on the network, we advise you to change the default hostname to something sensible. We used "px4autopilot" for our setup. Connect to the Pi via SSH and follow the below instructions.
+为了避免与同一网络上的其他树莓派有冲突，我们建议你改变默认主机名为明显的名字。我们使用“px4autopilot”作为我们的主机名。通过ssh连接pi并执行指令。
 
 Edit the hostname file:
 
