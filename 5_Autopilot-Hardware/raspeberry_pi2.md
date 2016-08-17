@@ -1,4 +1,3 @@
-###################5_Autopilot-Hardware/raspeberry_pi2.md
 
 # 树莓派Pi 2
 
